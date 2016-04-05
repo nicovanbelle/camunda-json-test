@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-deployment-structure>
     <deployment>
+        <exclude-subsystems>
+            <subsystem name="jaxrs" />
+        </exclude-subsystems>
         <dependencies>
             <module name="com.fasterxml.jackson.core.jackson-databind" slot="2.5.3" export="true" />
         </dependencies>
