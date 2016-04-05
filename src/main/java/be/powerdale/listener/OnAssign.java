@@ -11,7 +11,6 @@ import javax.inject.Named;
 @Named
 public class OnAssign implements TaskListener {
 
-    @Override
     public void notify(DelegateTask delegateTask) {
         VariableMap typedMap = delegateTask.getVariablesTyped(true);
     }

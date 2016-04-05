@@ -15,7 +15,6 @@ import javax.inject.Named;
 public class PrintVariables implements TaskListener {
     private static final Logger LOGGER = LoggerFactory.getLogger(PrintVariables.class);
 
-    @Override
     public void notify(DelegateTask delegateTask) {
         LOGGER.debug("fetching variables");
         VariableMap typedMap = delegateTask.getVariablesTyped(true);

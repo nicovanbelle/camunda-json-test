@@ -19,13 +19,10 @@ import java.util.Map;
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
 @ProcessApplication("Test Application")
 @Local({ProcessApplicationInterface.class})
-public class AthlonEjbProcessApplication extends EjbProcessApplication {
+public class ExampleEjbProcessApplication extends EjbProcessApplication {
     private CdiEventListener cdiEventListener = new CdiEventListener();
 
     private Map<String, String> properties = new HashMap<>();
-
-    public AthlonEjbProcessApplication() {
-    }
 
     @PostConstruct
     public void start() {
